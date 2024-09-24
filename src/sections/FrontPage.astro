@@ -1,0 +1,15 @@
+---
+import FrameWrapper from "@/components/frontPage/FrameWrapper.astro"
+import Bridegroom from '@/components/frontPage/Bridegroom.astro'
+import Slider from '@/components/frontPage/react/Slider.tsx'
+
+const slides = ["/images/slider/img1.jpg", "/images/slider/img2.jpg", "/images/slider/img3.jpeg"]
+---
+
+<div id="front-invite" class="w-full h-full flex">
+  <div class="relative w-full h-full">
+    <FrameWrapper />
+    <Bridegroom bride={"Katherine"} groom={"Leonel"} />
+    <Slider slides={slides}  />
+  </div>
+</div>

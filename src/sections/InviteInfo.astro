@@ -1,0 +1,11 @@
+---
+import DateWrapper from "@/components/inviteInfo/DateWrapper.tsx"
+import InviteAddress from "@/components/inviteInfo/InviteAddress.astro"
+import InviteText from "@/components/inviteInfo/InviteText.astro"
+---
+
+<div id="invite-wrapper" class="w-full h-full flex flex-col bg-orange-50">
+  <InviteText />
+  <DateWrapper targetDate={ new Date("2024-12-7")} client:load/>
+  <InviteAddress />
+</div>
